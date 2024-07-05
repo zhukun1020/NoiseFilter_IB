@@ -23,7 +23,7 @@ python pre_cands.py \
 done
 ```
 
-```
+```shell
 dataset_name=nq_dev
 batch_size=2
 max_example=5
@@ -34,7 +34,7 @@ python cal_ib.py \
 --save_path ./data/combine/ \
 --data_name ${dataset_name}.jsonl \
 --save_name ${dataset_name}_loss.jsonl \
---model_path /home/kzhu/project/noise_filtering/models/llama2_7b_chat_hf \
+--model_path ./models/llama2_13b_chat_hf \
 --batch_size ${batch_size} \
 --max_example ${max_example}
 
